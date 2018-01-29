@@ -1,0 +1,35 @@
+Joey Costa
+This is an example database to hold information about students and courses. A front end can be developed to display courses, professors, and schedules of users who signed up for the service. 
+
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Structure of source code
+Api
+	v1
+		api.php
+			//file to help reroute function calls and establish host
+		class.API.PHP
+			//gets the HTML request data, sets up header data (including content-type and status), clean inputs   
+		class.MyClassSchedulerAPI.php
+			//handles the specific call to the API, GET/POST and calls the corresponding function
+css 
+	//holds all of the css files relative to the entire project
+	
+js
+	// holds all of the javascript files relative to the entire project
+
+models
+	class.Database.php
+		// file is to connect using a mysqli implementation. Protect against xss scripting and sql injection
+	config.php
+		// a global file to do all includes and establish global variables
+	Funcs.php
+		// a file to handle the CALLAPI functionality as well as holds all PHP functions. 
+	InsertDepartment.php
+		// this file was the file used to create the departments
+	Path.php
+		// a global file that is used to access site specific data. To use relative URL's throughout the project
+
+nc-db-settings.php 
+	// file that holds the mysqli connect username and password. OMITTED IN PUBLIC REPOSITORY.
